@@ -37,6 +37,10 @@
 
 </script>
 
+<svelte:head>
+    <title>NewsApi</title>
+</svelte:head>
+
 <h1 class="text-4xl font-extrabold text-neutral-300 text-center m-8">Get top-headlines from around the world!</h1>
 <form class="bg-neutral-800 shadow-raised my-8 mx-12 p-4 rounded-lg" on:submit|preventDefault={() => getArticles(searchTerm, pageSize, pageNo)}>
     <div class="flex justify-around items-center text-neutral-300">
